@@ -1,0 +1,29 @@
+#ALL items
+
+GET hhttp://localhost:3000/api/items
+
+### items by id
+
+GET http://localhost:3000/api/items/1
+
+### delete by id
+
+DELETE http://localhost:3000/api/items/1
+
+###
+
+POST http://localhost:3000/api/items
+Cantent-Type: application/json
+
+{
+    "item": "task3",
+}
+
+
+###
+PATCH  http://localhost:3000/api/items/2
+Cantent-Type: application/json
+
+{   
+    "item": "task5",
+}
